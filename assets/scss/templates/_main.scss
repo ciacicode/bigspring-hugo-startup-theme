@@ -149,7 +149,7 @@ a.post-title {
   }
 
   thead {
-    background: $white;
+    background: $neutral;
     margin-bottom: 0;
 
     tr {
@@ -185,7 +185,7 @@ a.post-title {
 
   .notices.note p {
     border-top: 30px solid #6ab0de;
-    background: $white;
+    background: $neutral;
   }
 
   .notices.note p::after {
@@ -199,7 +199,7 @@ a.post-title {
 
   .notices.tip p {
     border-top: 30px solid #78C578;
-    background: $white;
+    background: $neutral;
   }
 
   .notices.tip p::after {
@@ -212,7 +212,7 @@ a.post-title {
 
   .notices.info p {
     border-top: 30px solid #F0B37E;
-    background: $white;
+    background: $neutral;
   }
 
   .notices.info p::after {
@@ -226,7 +226,7 @@ a.post-title {
 
   .notices.warning p {
     border-top: 30px solid #E06F6C;
-    background: $white;
+    background: $neutral;
   }
 
   .notices.warning p::after {
@@ -245,7 +245,7 @@ a.post-title {
     border-left: 2px solid $primary-color;
     margin: 40px 0;
     font-weight: bold;
-    background: $white;
+    background: $neutral;
 
     p {
       margin-bottom: 0 !important;
