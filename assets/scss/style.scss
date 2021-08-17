@@ -1,6 +1,7 @@
 // Color Variables
 {{ with site.Params.variables }}
 $primary-color: {{.primary_color | default "#3D5A80"}};
+$secondary-color: {{.secondary_color | default "#F4A261"}};
 $text-color: {{.text_color | default "#302B27"}};
 $text-color-dark: {{.text_color_dark | default "#000000"}};
 $body-color: {{.body_color | default "#fff"}};
@@ -8,7 +9,7 @@ $border-color: {{.border_color | default "#ECECEC"}};
 $black: {{.black | default "#000"}};
 $white: {{.white | default "#fff"}};
 $neutral: {{.neutral | default "#F3F4F7"}};
-$light: {{.light | default "#EDF6F5"}};
+$light: {{.light | default "#9ee5dd"}};
 
 // Font Variables
 $primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font | default "Inter"}}', {{.primary_font_type | default "sans-serif"}};

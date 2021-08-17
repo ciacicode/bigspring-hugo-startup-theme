@@ -4,7 +4,7 @@
 }
 
 .feature-card {
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 20px;
   transition: .2s ease;
   background-color: $white;
@@ -33,18 +33,18 @@
 }
 
 .social-icons a {
-  color: $primary-color;
+  color: $black;
   text-align: center;
   height: 35px;
   width: 35px;
   line-height: 35px;
-  border: 1px solid $primary-color;
+  border: 1px solid $black;
   border-radius: 50%;
   display: block;
 
   &:hover {
-    color: $white;
-    background-color: $primary-color;
+    color: $black;
+    background-color: $white;
   }
 }
 
@@ -176,7 +176,7 @@ a.post-title {
   .notices p::before {
     position: absolute;
     top: 2px;
-    color: $white;
+    color: $black;
     font-family: "themify";
     font-weight: 900;
     content: "\e717";
@@ -192,7 +192,7 @@ a.post-title {
     content: 'Note';
     position: absolute;
     top: 2px;
-    color: $white;
+    color: $black;
     left: 2rem;
   }
 
@@ -206,7 +206,7 @@ a.post-title {
     content: 'Tip';
     position: absolute;
     top: 2px;
-    color: $white;
+    color: $black;
     left: 2rem;
   }
 
@@ -219,7 +219,7 @@ a.post-title {
     content: 'Info';
     position: absolute;
     top: 2px;
-    color: $white;
+    color: $black;
     left: 2rem;
   }
 
@@ -287,7 +287,7 @@ a.post-title {
 
       &:hover {
         background: $primary-color;
-        color: $white;
+        color: $black;
       }
 
       &:focus {
@@ -305,7 +305,7 @@ a.post-title {
     &.active {
       .page-link {
         background: $primary-color;
-        color: $white;
+        color: $black;
       }
     }
   }
