@@ -1,7 +1,7 @@
 /*  typography */
 
 body {
-  line-height: 1.2;
+  line-height: 1.25;
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -13,7 +13,7 @@ p,
   font-weight: 400;
   color: $text-color;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.25;
   font-family: $primary-font;
 }
 
@@ -35,7 +35,7 @@ h6, .h6 {
 
 h1,
 .h1 {
-  font-size: 48px;
+  font-size: 48.8px;
 
   @include tablet {
     font-size: 40px;
@@ -44,7 +44,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 38px;
+  font-size: 39.1px;
 
   @include tablet {
     font-size: 30px;
@@ -53,22 +53,17 @@ h2,
 
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 31.3px;
 }
 
 h4,
 .h4 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h5,
 .h5 {
-  font-size: 16px;
-}
-
-h6,
-.h6 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .display-3{
