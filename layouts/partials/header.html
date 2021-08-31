@@ -39,7 +39,7 @@
               {{ .Language.LanguageName }}
             </a> 
           <div class="dropdown-menu">
-            {{ range .Page.AllTranslations }}
+            {{ range .AllTranslations }}
             <a class="dropdown-item" href="{{ .Permalink }}" title="{{.Language.LanguageName}}">{{ .Language.LanguageName }}</a>
             {{ end }}
           </div>
