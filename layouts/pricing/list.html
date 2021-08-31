@@ -85,7 +85,7 @@
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ i18n "contactus" }}</a>
         {{ end }}
         {{ end }}
       </div>
