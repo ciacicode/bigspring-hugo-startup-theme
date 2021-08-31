@@ -34,16 +34,19 @@
           {{ end }}
 
           <!-- Language List -->
+          {{ if .IsTranslated }}
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
               {{ .Language.LanguageName }}
             </a> 
           <div class="dropdown-menu">
-            {{ range .AllTranslations }}
+            {{ range .Translations }}
             <a class="dropdown-item" href="{{ .Permalink }}" title="{{.Language.LanguageName}}">{{ .Language.LanguageName }}</a>
             {{ end }}
           </div>
           </li>
+          {{ end }}
+
         </ul>
 
         {{ if site.Params.navigation_button.enable }}
