@@ -102,10 +102,9 @@
 {{ end }}
 {{ end }}
 <!-- /service -->
-
 <!--/team -->
-{{ if site.Data.homepage.team.enable }}
-{{ with site.Data.homepage.team }}
+{{ with .Params.team }}
+{{ if .enable }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
