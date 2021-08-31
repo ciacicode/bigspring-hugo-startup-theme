@@ -41,7 +41,7 @@
             </a> 
           <div class="dropdown-menu">
             {{ range .Translations }}
-            <a class="dropdown-item" href="{{ .Permalink }}" title="{{.Language.LanguageName}}">{{ .Language.LanguageName }}</a>
+            <a class="dropdown-item" href="{{ .RelPermalink }}">{{ default .Lang .Language.LanguageName }}</a>
             {{ end }}
           </div>
           </li>
