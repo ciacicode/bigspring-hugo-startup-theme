@@ -11,9 +11,9 @@
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
             <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
+            <ul class="fa-ul mb-5">
               {{ range .services }}
-              <li>{{ . | markdownify }}</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>{{ . | markdownify }}</li>
               {{ end }}
             </ul>
             {{ if .button.enable }}
@@ -32,9 +32,9 @@
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
             <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
+            <ul class="fa-ul mb-5">
               {{ range .services }}
-              <li>{{ . | markdownify }}</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>{{ . | markdownify }}</li>
               {{ end }}
             </ul>
             {{ if .button.enable }}
@@ -53,9 +53,9 @@
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
             <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
+            <ul class="fa-ul mb-5">
               {{ range .services }}
-              <li>{{ . | markdownify }}</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>{{ . | markdownify }}</li>
               {{ end }}
             </ul>
             {{ if .button.enable }}

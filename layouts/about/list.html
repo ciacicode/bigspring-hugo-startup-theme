@@ -1,0 +1,105 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+{{ "<!-- about -->" | safeHTML }}
+
+{{ with .Params.intro }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="mb-3">{{ .title | markdownify }}</h2>
+        <p class="mb-4">{{ .content | markdownify }}</p>
+        <p class="mb-4">{{ .aside | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ with .Params.approach }}
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="mb-3">{{ .title | markdownify }}</h2>
+        <p class="mb-4">{{ .content | markdownify }}</p>
+        {{ range .approach_item }}
+        <div class="col-lg-10 mx-auto">
+          <ul>
+            <li><h4 class="mb-2">{{ .name | emojify }}</h4> 
+              <p>{{ .content | markdownify }}</p></li>
+          </ul>
+        </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ with .Params.assessment }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="mb-3">{{ .title | markdownify }}</h2>
+        <p class="mb-4">{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ i18n "getStarted" }}</a></div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ with .Params.whoweare }}
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="mb-3">{{ .title | markdownify }}</h2>
+        <p class="mb-4">{{ .content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.values }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-left">
+        <h2 class="mb-3">{{ .title | markdownify }}</h2>
+        {{ range .value_item }}
+        <div class="col-lg-10 mx-auto">
+          <ul>
+            <li><h4 class="mb-2">{{ .name | emojify }}</h4> 
+              <h5 class="mb-3"> {{ .subtitle | markdownify }} </h5>
+              <p>{{ .content | markdownify }}</p></li>
+            
+            
+          </ul>
+        </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ "<!-- /about -->" | safeHTML }}
+
+
+<!-- call to action -->
+
+<!-- /call to action -->
+
+{{ end }}
