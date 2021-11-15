@@ -9,9 +9,9 @@
 <!-- multilingual SEO optimizations -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
-<link rel="alternate" hreflang="{{.Lang}}" href="{{ .RelPermalink | absLangURL }}">
-{{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
+{{ end }}
+<link rel="alternate" hreflang="{{.Lang}}" href="{{ .RelPermalink | absLangURL }}">
 {{ end }}
 {{ with site.Params.author }}
 <meta name="author" content="{{ . }}">{{ end }}
@@ -19,7 +19,13 @@
 
 <!--Favicon-->
 <link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
-<link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
+
+<link rel="icon" type="image/svg+xml" href="{{ site.Params.faviconsvg | absURL }}">
+<link rel="icon" type="image/png" href="{{ site.Params.favicon | absURL }}">
+
+
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
 
 <!-- mobile responsive meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
