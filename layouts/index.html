@@ -30,6 +30,7 @@
     <div class="row justify-content-center">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <p class="mb-4">{{ .content | markdownify }}</p>
       </div>
       {{ range .feature_item }}
       <div class="col-md-4 col-sm-6 mb-4">
@@ -102,35 +103,6 @@
 {{ end }}
 {{ end }}
 <!-- /service -->
-<!--/team -->
-{{ with .Params.team }}
-{{ if .enable }}
-<section class="section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mx-auto text-center">
-        <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .subtitle | markdownify }}</p>
-      </div>
-    </div>
-    <div class="row">
-      {{ range .teamMember }}
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="card border-0 text-center">
-          <img src="{{ .image | relURL }}" alt="material" class="card-img-top border-0">
-          <div class="card-body">
-            <h4>{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!--/team -->
 
 
 <!-- screenshot -->
