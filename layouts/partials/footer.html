@@ -6,7 +6,7 @@
         <div class="h3 mb-4 lightsection" >{{ site.Params.footer_menu_left }}</div>
         <ul class="list-unstyled footer-list lightsection">
           {{ range site.Menus.footer_left }}
-          <li class="lightsection"><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          <li ><a class="lightlink" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -16,7 +16,7 @@
         <div class="h3 mb-4 lightsection">{{ site.Params.footer_menu_middle }}</div>
         <ul class="list-unstyled footer-list lightsection">
           {{ range site.Menus.footer_middle }}
-          <li class="lightsection"><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          <li ><a class="lightlink" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -26,13 +26,13 @@
         <div class="h3 mb-4 lightsection">{{ site.Params.footer_menu_right }}</div>
         <ul class="list-unstyled footer-list lightsection">
           {{ range site.Menus.footer_right }}
-          <li class="lightsection"><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          <li><a  class="lightlink"href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
-        <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
+        <a class="d-block h3 mb-3 lightlink" href="{{ site.BaseURL | absLangURL}}">
           {{ with site.Params.lightlogo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
           {{ else }}{{site.Title}}{{end}}

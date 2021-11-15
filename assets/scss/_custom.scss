@@ -10,3 +10,16 @@
 .lightsection{
 	color: $text-color-light;
 }
+
+.lightlink{
+	color: $secondary-color;
+
+    &:hover {
+      color: $text-color-light;
+    }
+}
+
+.card {
+	
+	background: transparent;
+}
