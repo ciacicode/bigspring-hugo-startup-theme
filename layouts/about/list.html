@@ -69,7 +69,7 @@
       <div class="col-lg-10 mx-auto text-left">
         <h2 class="mb-3 lightsection">{{ .title | markdownify }}</h2>
         {{ range .value_item }}
-        <div class="col-lg-10 mx-auto">
+        <div class="mx-auto">
           <ul>
             <li><h4 class="mb-2">{{ .name | emojify }}</h4> 
               <h5 class="mb-3 lightsection"> {{ .subtitle | markdownify }} </h5>
@@ -94,7 +94,7 @@
         <h2 class="mb-3 ">{{ .title | markdownify }}</h2>
         <p class="mb-4 ">{{ .content | markdownify }}</p>
         {{ range .approach_item }}
-        <div class="col-lg-10 mx-auto">
+        <div class="mx-auto">
           <ul>
             <li ><h4 class="mb-2">{{ .name | emojify }}</h4> 
               <p>{{ .content | markdownify }}</p></li>
