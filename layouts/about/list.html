@@ -107,6 +107,23 @@
 </section>
 {{ end }}
 
+<!--how we work -->
+
+
+{{ with .Params.workstyle }}
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2 class="mb-3 lightsection">{{ .title | markdownify }}</h2>
+        <p class="mb-4 lightsection">{{ .content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!--/how we work -->
 
 {{ with .Params.assessment }}
 <section class="section">
