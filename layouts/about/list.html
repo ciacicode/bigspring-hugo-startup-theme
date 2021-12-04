@@ -107,10 +107,10 @@
 </section>
 {{ end }}
 
-<!--how we work -->
 
 
-{{ with .Params.workstyle }}
+
+<!-- {{ with .Params.workstyle }}
 <section class="section bg-light">
   <div class="container">
     <div class="row">
@@ -121,9 +121,26 @@
     </div>
   </div>
 </section>
-{{ end }}
+{{ end }} -->
 
-<!--/how we work -->
+
+<!-- how we work graphic -->
+{{ with .Params.graphic }}
+{{ if .enable }}
+<section class="section pb-0 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title lightsection">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+  </div>
+  {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
+</section>
+{{ end }}
+{{ end }}
+<!-- /how we work  graphic-->
+
 
 {{ with .Params.assessment }}
 <section class="section">
